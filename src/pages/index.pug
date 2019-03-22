@@ -1,0 +1,39 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+	.container
+		+b.profession_front-end
+			+e.row
+				+e.col_1
+					+e.H2.title Front-End
+					+e.box-content
+						+e.description Професия Front-End разработчик
+						+e.UL.list-tech
+							+e.LI.list-tech-item HTML5
+							+e.LI.list-tech-item CSS3
+							+e.LI.list-tech-item SASS
+							+e.LI.list-tech-item JavaScript
+							+e.LI.list-tech-item jQuery
+							+e.LI.list-tech-item Bootstrap
+							+e.LI.list-tech-item Git
+
+						+e.list-time
+							+e.list-time-item
+								+e.list-time-name Старт:
+								+e.list-time-value 16.04.2019 в 19:00
+							+e.list-time-item
+								+e.list-time-name До старта:
+								+e.list-time-value 27 д. 5 ч. 50 м.
+
+					+e.box-btn
+						+e.BUTTON.btn.btn_regular Записатся на курс
+						+e.A(href="#").btn.btn_transparent Программа обучения
+				+e.col_2(style="background-image: url(img/prof-front-end.png)")
+					+e.video-play
+						I.fas.fa-play
